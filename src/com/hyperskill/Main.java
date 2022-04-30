@@ -57,8 +57,8 @@ public class Main {
                         "\nWrite action (buy, fill, take, remaining, exit):");
             }
             if (action.equals("take")) {
-//                addIngredients.setMoney(status.getMoney());
                 System.out.println("I gave you $" + addIngredients.getMoney());
+                addIngredients.setMoney(0);
                 System.out.println("The coffee machine has:\n" + addIngredients.getWater() + " ml of water\n" + addIngredients.getMilk() + " ml of milk\n" +
                         addIngredients.getCoffee() + " g of coffee beans\n" + addIngredients.getCupsAmount() + " disposable cups\n" + addIngredients.getMoney() + " of money\n" +
                         "\nWrite action (buy, fill, take, remaining, exit):");

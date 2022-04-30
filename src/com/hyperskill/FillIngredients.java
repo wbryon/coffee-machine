@@ -33,7 +33,7 @@ public class FillIngredients {
         return money;
     }
     public void setMoney(int money) {
-        this.money += money;
+        this.money = 0;
     }
 
     public int getCupsAmount() {
