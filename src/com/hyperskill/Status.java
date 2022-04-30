@@ -1,4 +1,4 @@
-package com.school21;
+package com.hyperskill;
 
 class Status {
 

@@ -1,4 +1,4 @@
-package com.school21;
+package com.hyperskill;
 
 import java.util.Scanner;
 
@@ -9,11 +9,11 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String coffeeType;
         String action;
-        System.out.println("The coffee machine has:\n" + addIngredients.getWater() + " ml of water\n" + addIngredients.getMilk() + " ml of milk\n" +
-                status.getCoffee() + " g of coffee beans\n" + addIngredients.getCupsAmount() + " disposable cups\n" + addIngredients.getMoney() + " of money\n" +
-                "\nWrite action (buy, fill, take, remaining, exit):");
 
         while (true) {
+            System.out.println("The coffee machine has:\n" + addIngredients.getWater() + " ml of water\n" + addIngredients.getMilk() + " ml of milk\n" +
+                    status.getCoffee() + " g of coffee beans\n" + addIngredients.getCupsAmount() + " disposable cups\n" + addIngredients.getMoney() + " of money\n" +
+                    "\nWrite action (buy, fill, take, remaining, exit):");
             action = scanner.next();
             if (action.equals("buy")) {
                 System.out.println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:");
