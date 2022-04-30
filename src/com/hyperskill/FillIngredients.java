@@ -12,21 +12,21 @@ public class FillIngredients {
         return water;
     }
     public void setWater(int water) {
-        this.water = water;
+        this.water += water;
     }
 
     public int getMilk() {
         return milk;
     }
     public void setMilk(int milk) {
-        this.milk = milk;
+        this.milk += milk;
     }
 
     public int getCoffee() {
         return coffee;
     }
     public void setCoffee(int coffee) {
-        this.coffee = coffee;
+        this.coffee += coffee;
     }
 
     public int getMoney() {
@@ -40,6 +40,6 @@ public class FillIngredients {
         return cupsAmount;
     }
     public void setCupsAmount(int cupsAmount) {
-        this.cupsAmount = cupsAmount;
+        this.cupsAmount += cupsAmount;
     }
 }

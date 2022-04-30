@@ -10,10 +10,12 @@ public class Main {
         String coffeeType;
         String action;
 
+//        System.out.println("The coffee machine has:\n" + addIngredients.getWater() + " ml of water\n" + addIngredients.getMilk() + " ml of milk\n" +
+//                status.getCoffee() + " g of coffee beans\n" + addIngredients.getCupsAmount() + " disposable cups\n" + addIngredients.getMoney() + " of money\n" +
+//                "\nWrite action (buy, fill, take, remaining, exit):");
+
         while (true) {
-            System.out.println("The coffee machine has:\n" + addIngredients.getWater() + " ml of water\n" + addIngredients.getMilk() + " ml of milk\n" +
-                    status.getCoffee() + " g of coffee beans\n" + addIngredients.getCupsAmount() + " disposable cups\n" + addIngredients.getMoney() + " of money\n" +
-                    "\nWrite action (buy, fill, take, remaining, exit):");
+            System.out.println("Write action (buy, fill, take, remaining, exit):");
             action = scanner.next();
             if (action.equals("buy")) {
                 System.out.println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:");
@@ -44,7 +46,7 @@ public class Main {
                 }
             }
             else if (action.equals("fill")) {
-                System.out.println("Write how many ml of water you want to add:");
+                System.out.println("\nWrite how many ml of water you want to add:");
                 addIngredients.setWater(scanner.nextInt());
                 System.out.println("Write how many ml of milk you want to add:");
                 addIngredients.setMilk(scanner.nextInt());
@@ -52,22 +54,23 @@ public class Main {
                 addIngredients.setCoffee(scanner.nextInt());
                 System.out.println("Write how many disposable cups of coffee you want to add:");
                 addIngredients.setCupsAmount(scanner.nextInt());
-                System.out.println("\nWrite action (buy, fill, take, remaining, exit):");
+                System.out.println();
             }
             else if (action.equals("take")) {
-                System.out.println("\nI gave you $" + addIngredients.getMoney() + "\n");
+                System.out.println("\nI gave you $" + addIngredients.getMoney());
                 addIngredients.setMoney(0);
             }
             else if (action.equals("remaining")) {
-                System.out.println("");
+                System.out.println("\nThe coffee machine has:\n" + addIngredients.getWater() + " ml of water\n" + addIngredients.getMilk() + " ml of milk\n" +
+                addIngredients.getCoffee() + " g of coffee beans\n" + addIngredients.getCupsAmount() + " disposable cups\n" + addIngredients.getMoney() + " of money\n");
             }
             else if (action.equals("exit")) {
                 System.exit(0);
             }
-            addIngredients.setWater(status.getWater());
-            addIngredients.setMilk(status.getMilk());
-            addIngredients.setCoffee(status.getCoffee());
-            addIngredients.setCupsAmount(status.getCupsAmount());
+//            addIngredients.setWater(status.getWater());
+//            addIngredients.setMilk(status.getMilk());
+//            addIngredients.setCoffee(status.getCoffee());
+//            addIngredients.setCupsAmount(status.getCupsAmount());
         }
     }
 }
