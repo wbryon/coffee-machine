@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Fill fill = new Fill();
-        DoCoffeeDrink coffee = new DoCoffeeDrink();
         Status status = new Status();
         Scanner scanner = new Scanner(System.in);
         String coffeeType;
@@ -20,7 +19,6 @@ public class Main {
                     coffeeType = scanner.next();
                     if (coffeeType.equals("1")) {
                         status.doEspresso();
-//                        System.out.println("water: " + status.getWater() + ", coffee: " + status.getCoffee() + ", milk: " + status.getMilk() + ", cups: " + status.getCupsAmount());
                     }
                     if (coffeeType.equals("2")) {
                         status.doLatte();
