@@ -20,7 +20,6 @@ public class Main {
                     coffeeType = scanner.next();
                     if (coffeeType.equals("1")) {
                         status.doEspresso();
-//                        System.out.println("water: " + status.getWater() + ", coffee: " + status.getCoffee() + ", milk: " + status.getMilk() + ", cups: " + status.getCupsAmount());
                     }
                     if (coffeeType.equals("2")) {
                         status.doLatte();
