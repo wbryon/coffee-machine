@@ -18,7 +18,11 @@ public class Main {
                     System.out.println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:");
                     coffeeType = scanner.next();
                     if (coffeeType.equals("1")) {
+<<<<<<< HEAD
                         System.out.println("\nI have enough resources, making you a coffee!");
+=======
+                        status.doEspresso();
+>>>>>>> coffee-machine
                     }
                     if (coffeeType.equals("2")) {
                     }
