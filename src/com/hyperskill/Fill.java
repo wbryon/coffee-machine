@@ -3,7 +3,6 @@ package com.hyperskill;
 class Fill {
 
     private int water = 0;
-
     private int milk = 0;
     private int coffee = 0;
     private int cupsAmount = 0;
