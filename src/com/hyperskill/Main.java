@@ -18,23 +18,11 @@ public class Main {
                     System.out.println("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:");
                     coffeeType = scanner.next();
                     if (coffeeType.equals("1")) {
-                        fill.setWater(250);
-                        fill.setCoffee(16);
-                        fill.setMoney(4);
-                        fill.setCupsAmount(1);
                         System.out.println("\nI have enough resources, making you a coffee!");
                     }
                     if (coffeeType.equals("2")) {
-                        fill.setWater(350);
-                        fill.setMilk(75);
-                        fill.setCoffee(20);
-                        fill.setMoney(7);
                     }
                     if (coffeeType.equals("3")) {
-                        fill.setWater(200);
-                        fill.setMilk(100);
-                        fill.setCoffee(12);
-                        fill.setMoney(6);
                     }
                     if (coffeeType.equals("back")) {
                         System.out.println("\n1The coffee machine has:\n" + status.getWater() + " ml of water\n" + status.getMilk() + " ml of milk\n" +
