@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Fill fill = new Fill();
-        DoCoffeeDrink coffee = new DoCoffeeDrink();
         Status status = new Status();
         Scanner scanner = new Scanner(System.in);
         String coffeeType;
