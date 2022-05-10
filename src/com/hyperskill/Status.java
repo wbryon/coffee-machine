@@ -1,6 +1,6 @@
 package com.hyperskill;
 
-public class Status {
+class Status {
 
     private int water = 400;
     private int milk = 540;
@@ -36,22 +36,22 @@ public class Status {
 
     public void doEspresso() {
         if (doCoffee.getEspressoWater() <= getWater() && doCoffee.getEspressoCoffee() <= getCoffee() && doCoffee.getDisposableCup() >= 1) {
-            System.out.println("\nI have enough resources, making you a coffee!");
+            System.out.println("I have enough resources, making you a coffee!\n");
             setWater(doCoffee.getEspressoWater());
             setCoffee(doCoffee.getEspressoCoffee());
             setCupsAmount();
             setMoney(doCoffee.getEspressoCost());
         }
         else if (doCoffee.getEspressoWater() > getWater()) {
-            System.out.println("Sorry, not enough water!");
+            System.out.println("Sorry, not enough water!\n");
             return;
         }
         else if (doCoffee.getEspressoCoffee() > getCoffee()) {
-            System.out.println("Sorry, not enough coffee!");
+            System.out.println("Sorry, not enough coffee!\n");
             return;
         }
         else {
-            System.out.println("Sorry, not enough disposable cups!");
+            System.out.println("Sorry, not enough disposable cups!\n");
             return;
         }
     }
@@ -59,27 +59,28 @@ public class Status {
     public void doLatte() {
         if (doCoffee.getLatteWater() <= getWater() && doCoffee.getLatteCoffee() <= getCoffee() &&
                 doCoffee.getLatteMilk() <= getMilk() && doCoffee.getDisposableCup() >= 1) {
-            System.out.println("\nI have enough resources, making you a coffee!");
             setWater(doCoffee.getLatteWater());
-            setCoffee(doCoffee.getEspressoCoffee());
+            setCoffee(doCoffee.getLatteCoffee());
             setMilk(doCoffee.getLatteMilk());
             setCupsAmount();
             setMoney(doCoffee.getLatteCost());
+            System.out.println("I have enough resources, making you a coffee!\n");
+            return;
         }
         else if (doCoffee.getLatteWater() > getWater()) {
-            System.out.println("Sorry, not enough water!");
+            System.out.println("Sorry, not enough water!\n");
             return;
         }
         else if (doCoffee.getLatteCoffee() > getCoffee()) {
-            System.out.println("Sorry, not enough coffee!");
+            System.out.println("Sorry, not enough coffee!\n");
             return;
         }
         else if (doCoffee.getLatteMilk() > getMilk()) {
-            System.out.println("Sorry, not enough milk!");
+            System.out.println("Sorry, not enough milk!\n");
             return;
         }
         else {
-            System.out.println("Sorry, not enough disposable cups!");
+            System.out.println("Sorry, not enough disposable cups!\n");
             return;
         }
     }
@@ -87,7 +88,7 @@ public class Status {
     public void doCappuccino() {
         if (doCoffee.getCappuccinoWater() <= getWater() && doCoffee.getCappuccinoCoffee() <= getCoffee() &&
                 doCoffee.getCappuccinoMilk() <= getMilk() && doCoffee.getDisposableCup() >= 1) {
-            System.out.println("\nI have enough resources, making you a coffee!");
+            System.out.println("I have enough resources, making you a coffee!\n");
             setWater(doCoffee.getCappuccinoWater());
             setCoffee(doCoffee.getCappuccinoCoffee());
             setMilk(doCoffee.getCappuccinoMilk());
@@ -95,19 +96,19 @@ public class Status {
             setMoney(doCoffee.getCappuccinoCost());
         }
         else if (doCoffee.getCappuccinoWater() > getWater()) {
-            System.out.println("Sorry, not enough water!");
+            System.out.println("Sorry, not enough water!\n");
             return;
         }
         else if (doCoffee.getCappuccinoCoffee() > getCoffee()) {
-            System.out.println("Sorry, not enough coffee!");
+            System.out.println("Sorry, not enough coffee!\n");
             return;
         }
         else if (doCoffee.getCappuccinoMilk() > getMilk()) {
-            System.out.println("Sorry, not enough milk!");
+            System.out.println("Sorry, not enough milk!\n");
             return;
         }
         else {
-            System.out.println("Sorry, not enough disposable cups!");
+            System.out.println("Sorry, not enough disposable cups!\n");
             return;
         }
     }
