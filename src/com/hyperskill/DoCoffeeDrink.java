@@ -1,6 +1,6 @@
 package com.hyperskill;
 
-public class DoCoffeeDrink {
+class DoCoffeeDrink {
 
     private int espressoCost = 4;
     private int latteCost = 7;
@@ -14,54 +14,6 @@ public class DoCoffeeDrink {
     private int latteMilk = 75;
     private int cappuccinoMilk = 100;
     private int disposableCup = 1;
-
-    public void setEspressoCost(int espressoCost) {
-        this.espressoCost = espressoCost;
-    }
-
-    public void setLatteCost(int latteCost) {
-        this.latteCost = latteCost;
-    }
-
-    public void setCappuccinoCost(int cappuccinoCost) {
-        this.cappuccinoCost = cappuccinoCost;
-    }
-
-    public void setEspressoWater(int espressoWater) {
-        this.espressoWater = espressoWater;
-    }
-
-    public void setLatteWater(int latteWater) {
-        this.latteWater = latteWater;
-    }
-
-    public void setCappuccinoWater(int cappuccinoWater) {
-        this.cappuccinoWater = cappuccinoWater;
-    }
-
-    public void setEspressoCoffee(int espressoCoffee) {
-        this.espressoCoffee = espressoCoffee;
-    }
-
-    public void setLatteCoffee(int latteCoffee) {
-        this.latteCoffee = latteCoffee;
-    }
-
-    public void setCappuccinoCoffee(int cappuccinoCoffee) {
-        this.cappuccinoCoffee = cappuccinoCoffee;
-    }
-
-    public void setLatteMilk(int latteMilk) {
-        this.latteMilk = latteMilk;
-    }
-
-    public void setCappuccinoMilk(int cappuccinoMilk) {
-        this.cappuccinoMilk = cappuccinoMilk;
-    }
-
-    public void setDisposableCup(int disposableCup) {
-        this.disposableCup = disposableCup;
-    }
 
     public int getEspressoCost() {
         return espressoCost;
